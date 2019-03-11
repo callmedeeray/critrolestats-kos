@@ -20,8 +20,6 @@ tree3 = html.fromstring(page3.content)
 
 kos = tree3.xpath('//ol[2]//span/text()')
 
-dat = {'character': '', 'episode_info': '', 'killed_by_what': '', 'KOs': 0, 'full_string': '', 'pk': 0}
-scraperwiki.sqlite.save(unique_keys=['pk'], data = dat)
 
 pk = 1
 for k in kos:
